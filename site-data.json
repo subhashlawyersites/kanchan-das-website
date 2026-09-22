@@ -1,0 +1,201 @@
+{
+  "profile": {
+    "name": "Advocate Kanchan Das & Associates",
+    "qualifications": "M.A., LL.B., PGDIPR, CS (Exe)",
+    "designation": "High Court at Calcutta & Armed Forces Tribunal (AFT)",
+    "tagline": "Indian Air Force Veteran | Military Law, AFT, High Court & Civil Matters",
+    "intro": "An Indian Air Force Veteran with professional experience associated with defence establishments and legal cells, Advocate Kanchan Das handles appropriate matters relating to Armed Forces personnel and veterans as well as civil, matrimonial, property, banking, intellectual property and High Court matters.",
+    "about": "Advocate Kanchan Das is an Indian Air Force Veteran with experience associated with defence establishments and legal cells. His legal practice includes matters before the Armed Forces Tribunal and High Court at Calcutta, together with a broad range of civil and other legal matters. His professional approach is based on understanding the facts, examining the relevant documents and providing appropriate legal assistance according to the nature and jurisdiction of each matter.",
+    "professionalHighlight": "Empanelled Advocate – Indian Bank",
+    "phone": "7838412183",
+    "whatsapp": "917838412183",
+    "email": "advkanchan1512@gmail.com",
+    "chambers": [
+      {
+        "name": "Chamber 1",
+        "address": "7 Red Cross Place, 3rd Floor, Room No. 3/17, Kolkata – 700001, West Bengal",
+        "googleMapUrl": "https://www.google.com/maps/search/?api=1&query=7+Red+Cross+Place+Kolkata+700001",
+        "mapEmbedUrl": "https://www.google.com/maps?q=7%20Red%20Cross%20Place%20Kolkata%20700001&output=embed"
+      },
+      {
+        "name": "Chamber 2",
+        "address": "Plot No. 321, Sainik Nagar, Barbaria, Barasat, Kolkata – 700126, West Bengal",
+        "googleMapUrl": "https://www.google.com/maps/search/?api=1&query=Plot+No+321+Sainik+Nagar+Barbaria+Barasat+Kolkata+700126",
+        "mapEmbedUrl": "https://www.google.com/maps?q=Plot+No+321+Sainik+Nagar+Barbaria+Barasat+Kolkata+700126&output=embed"
+      }
+    ],
+    "enrolment": "F/29/3/2019",
+    "barCouncil": "Bar Council of West Bengal"
+  },
+  "practiceHighlights": [
+    "Armed Forces Tribunal (AFT)",
+    "Military & Service Law",
+    "Disability & Service Pension Matters",
+    "High Court Matters",
+    "Civil & Property Disputes",
+    "Matrimonial & Family Matters",
+    "Banking & Financial Disputes",
+    "Trademark & Intellectual Property Matters"
+  ],
+  "services": [
+    {
+      "id": "aft-military-law",
+      "title": "Armed Forces Tribunal (AFT) & Military Law",
+      "icon": "fa-shield-halved",
+      "short": "Legal assistance in appropriate service, pension, disciplinary and other military-law matters before the Armed Forces Tribunal.",
+      "paragraphs": [
+        "Legal assistance and representation in appropriate matters concerning serving, retired and former members of the Armed Forces before the Armed Forces Tribunal (AFT).",
+        "Matters may include service-related grievances, pension disputes, disability-related claims, retirement benefits and other issues arising from military service, subject to the facts and jurisdiction of the individual case.",
+        "The practical understanding of the Armed Forces environment gained through prior Air Force service provides useful context when examining military service-related documents and grievances."
+      ]
+    },
+    {
+      "id": "disability-pension",
+      "title": "Disability & Service Pension Matters",
+      "icon": "fa-person-circle-plus",
+      "short": "Assistance in appropriate disability pension, service pension, family pension and related defence-service matters.",
+      "paragraphs": [
+        "Assistance in appropriate legal proceedings relating to disability pension, service pension and other retirement benefits of defence personnel and veterans.",
+        "Depending on the facts of the case, assistance may concern disability assessment, medical-board related issues, pension entitlement, arrears and related service benefits.",
+        "Family pension and other pension-related grievances may also be considered where appropriate and within the applicable jurisdiction."
+      ]
+    },
+    {
+      "id": "court-martial",
+      "title": "Court Martial & Military Disciplinary Matters",
+      "icon": "fa-gavel",
+      "short": "Legal assistance concerning appropriate military disciplinary proceedings, service grievances and related matters.",
+      "paragraphs": [
+        "Legal assistance concerning appropriate military disciplinary and service-related matters involving personnel of the Armed Forces.",
+        "Depending on the nature of the matter, assistance may involve examination of disciplinary proceedings, service records, orders and available legal remedies.",
+        "Each matter is considered individually after examining the relevant facts and documents."
+      ]
+    },
+    {
+      "id": "high-court",
+      "title": "High Court Matters",
+      "icon": "fa-landmark",
+      "short": "Representation and legal assistance in appropriate matters before the High Court at Calcutta.",
+      "paragraphs": [
+        "Representation and legal assistance in appropriate matters before the High Court at Calcutta, subject to the nature and jurisdiction of the case.",
+        "Matters may include appropriate writ proceedings, civil disputes, service-related litigation, challenges to administrative decisions and other proceedings within the applicable jurisdiction.",
+        "The appropriate legal remedy depends on the facts, documents, limitation and jurisdiction involved in each matter."
+      ]
+    },
+    {
+      "id": "civil-matters",
+      "title": "Civil Litigation & Disputes",
+      "icon": "fa-scale-balanced",
+      "short": "Legal assistance in appropriate civil disputes, claims, injunction matters and related proceedings.",
+      "paragraphs": [
+        "Assistance in appropriate civil disputes and related legal proceedings involving individuals, families and organisations.",
+        "Depending on the case, civil matters may involve contractual disputes, recovery claims, injunctions, declarations and other appropriate remedies.",
+        "The legal strategy is determined after examining the documents, facts and applicable law."
+      ]
+    },
+    {
+      "id": "land-property",
+      "title": "Land & Property Disputes",
+      "icon": "fa-house",
+      "short": "Assistance in appropriate land, property, possession and related civil disputes.",
+      "paragraphs": [
+        "Legal assistance in appropriate disputes relating to land and immovable property.",
+        "Depending on the circumstances, matters may involve title and possession issues, agreements, boundary disputes, injunctions, property claims and related civil proceedings.",
+        "Property disputes often require careful examination of title documents, deeds, records and other supporting evidence before determining the appropriate legal course."
+      ]
+    },
+    {
+      "id": "matrimonial-family",
+      "title": "Matrimonial & Family Matters",
+      "icon": "fa-people-roof",
+      "short": "Legal assistance in appropriate matrimonial, divorce and family-related disputes.",
+      "paragraphs": [
+        "Legal assistance in appropriate matrimonial and family-related matters, including divorce and related disputes.",
+        "Depending on the circumstances, assistance may concern appropriate matrimonial proceedings, maintenance-related matters, family disputes and other remedies available under applicable law.",
+        "Every matrimonial matter is highly fact-specific and is considered after understanding the circumstances and available documents."
+      ]
+    },
+    {
+      "id": "banking-financial",
+      "title": "Banking & Financial Disputes",
+      "icon": "fa-building-columns",
+      "short": "Legal assistance in appropriate banking, financial recovery and related disputes.",
+      "paragraphs": [
+        "Legal assistance in appropriate banking and financial disputes involving individuals, businesses and financial institutions.",
+        "Depending on the nature of the matter, assistance may include recovery-related disputes, contractual issues, financial claims and appropriate proceedings before competent forums.",
+        "Advocate Kanchan Das has also recently been empanelled as an Advocate for Indian Bank."
+      ]
+    },
+    {
+      "id": "trademark-ip",
+      "title": "Trademark & Intellectual Property Matters",
+      "icon": "fa-lightbulb",
+      "short": "Legal assistance concerning appropriate trademark and intellectual property rights matters.",
+      "paragraphs": [
+        "Assistance in appropriate matters concerning trademarks and intellectual property rights.",
+        "Depending on the circumstances, matters may involve trademark-related disputes, protection of intellectual property rights and appropriate legal proceedings.",
+        "The appropriate course of action depends upon the nature of the intellectual property, available documentation and applicable law."
+      ]
+    },
+    {
+      "id": "banking-panel",
+      "title": "Banking Panel & Institutional Matters",
+      "icon": "fa-building-columns",
+      "short": "Professional legal services for appropriate banking and institutional matters.",
+      "paragraphs": [
+        "Advocate Kanchan Das has been empanelled as an Advocate for Indian Bank.",
+        "The panel appointment reflects an additional professional association with the banking sector and complements his practice in appropriate banking and financial disputes.",
+        "Specific matters are handled according to the instructions, jurisdiction and applicable legal requirements."
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "image": "assets/gallery/kanchan-das-02.webp",
+      "caption": "Advocate Kanchan Das",
+      "alt": "Advocate Kanchan Das in professional attire"
+    },
+    {
+      "image": "assets/gallery/kanchan-das-03.webp",
+      "caption": "Professional Legal Practice",
+      "alt": "Advocate Kanchan Das in his chamber"
+    },
+    {
+      "image": "assets/gallery/kanchan-das-04.webp",
+      "caption": "Legal Research & Case Preparation",
+      "alt": "Advocate Kanchan Das reviewing legal documents"
+    }
+  ],
+  "courtOrders": [
+    {
+      "image": "assets/court-orders/aft-order-01.webp",
+      "title": "AFT Order – Sample",
+      "court": "Armed Forces Tribunal, Principal Bench, New Delhi",
+      "description": "Sample order displayed for testing the Court Orders section.",
+      "alt": "Armed Forces Tribunal court order"
+    },
+    {
+      "file": "assets/court-orders/aft-order-02.pdf",
+      "type": "pdf",
+      "title": "AFT Order – Sample 2",
+      "court": "Armed Forces Tribunal",
+      "description": "Sample PDF court order for website testing."
+    },
+    {
+      "file": "assets/court-orders/aft-order-03.pdf",
+      "type": "pdf",
+      "title": "AFT Order – Sample 3",
+      "court": "Armed Forces Tribunal",
+      "description": "Sample PDF court order for website testing."
+    },
+    {
+      "file": "assets/court-orders/aft-order-04.pdf",
+      "type": "pdf",
+      "title": "AFT Order – Sample 4",
+      "court": "Armed Forces Tribunal",
+      "description": "Sample PDF court order for website testing."
+    }
+  ],
+  "testimonials": [],
+  "professionalDocuments": []
+}
