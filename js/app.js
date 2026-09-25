@@ -212,7 +212,7 @@ function renderServices() {
 
         const card = document.createElement("div");
 
-        card.className = "col-md-6 col-lg-4";
+        card.className = "col-6 col-md-6 col-lg-4";
 
 
         card.innerHTML = `
@@ -242,9 +242,6 @@ function renderServices() {
 
 }
 
-
-/* ================= SERVICE POPUP ================= */
-
 function openServiceModal(serviceId) {
 
     const service =
@@ -257,7 +254,8 @@ function openServiceModal(serviceId) {
         service.title;
 
 
-    const body = document.getElementById("modalServiceBody");
+    const body =
+        document.getElementById("modalServiceBody");
 
     body.innerHTML = "";
 
@@ -292,14 +290,123 @@ function openServiceModal(serviceId) {
         `https://wa.me/${siteData.profile.whatsapp}?text=${encodeURIComponent(message)}`;
 
 
+    const modalElement =
+        document.getElementById("serviceModal");
+
     const modal =
-        new bootstrap.Modal(document.getElementById("serviceModal"));
+        bootstrap.Modal.getOrCreateInstance(modalElement);
+
+
+    /*
+       -----------------------------------------------------
+       CREATE ONE HISTORY ENTRY FOR THE OPEN PRACTICE AREA
+       -----------------------------------------------------
+    */
+
+    history.pushState(
+        {
+            ...(history.state || {}),
+            serviceModal: true
+        },
+        "",
+        window.location.href
+    );
+
 
     modal.show();
 
 }
 
+/* =========================================================
+   PRACTICE AREA POPUP — MOBILE BACK BUTTON SUPPORT
+   ========================================================= */
 
+(function setupServiceModalHistory() {
+
+    const modalElement =
+        document.getElementById("serviceModal");
+
+    if (!modalElement) return;
+
+
+    /*
+       This flag tells the close handler whether
+       the modal was closed by the phone/browser
+       Back button.
+    */
+
+    let closingFromHistory = false;
+
+
+    /*
+       PHONE / BROWSER BACK BUTTON
+       ---------------------------
+
+       When the visitor presses Back while the
+       Practice Area popup is open, the browser
+       activates the previous history entry.
+
+       We close ONLY the popup here.
+
+       We do NOT call history.back() again.
+    */
+
+    window.addEventListener("popstate", function () {
+
+        const modalInstance =
+            bootstrap.Modal.getInstance(modalElement);
+
+
+        if (
+            modalInstance &&
+            modalElement.classList.contains("show")
+        ) {
+
+            closingFromHistory = true;
+
+            modalInstance.hide();
+
+        }
+
+    });
+
+
+    /*
+       NORMAL CLOSE BUTTON
+       -------------------
+
+       If the visitor uses the popup's Close button,
+       remove the Practice Area history entry.
+
+       We call history.back() ONLY when the popup
+       was NOT already closed by the phone Back button.
+    */
+
+    modalElement.addEventListener(
+        "hidden.bs.modal",
+        function () {
+
+            if (closingFromHistory) {
+
+                closingFromHistory = false;
+
+                return;
+            }
+
+
+            if (
+                history.state &&
+                history.state.serviceModal === true
+            ) {
+
+                history.back();
+
+            }
+
+        }
+    );
+
+})();
 /* ================= GALLERY ================= */
 
 function renderGallery() {
@@ -336,7 +443,7 @@ function renderGallery() {
     <img
     src="${image.image}"
     alt="${image.alt || image.caption || "Professional photograph"}"
-    loading="lazy"
+    loading="eager"
     draggable="false"
     onload="this.classList.add('loaded')">
 
@@ -976,41 +1083,53 @@ function startContinuousLoop(elementId) {
 
 }
 // =========================================================
-// MOBILE NAVBAR — CLOSE WHEN CLICKING OUTSIDE
+// MOBILE NAVBAR — RELIABLE CLOSE BEHAVIOUR
 // =========================================================
 
 document.addEventListener("click", function (event) {
+
     const navbar = document.querySelector(".navbar");
     const navbarCollapse = document.querySelector(".navbar-collapse");
-    const navbarToggler = document.querySelector(".navbar-toggler");
 
-    if (!navbar || !navbarCollapse || !navbarToggler) return;
+    if (!navbar || !navbarCollapse) return;
 
-    // Only act when the mobile menu is currently open
-    if (!navbarCollapse.classList.contains("show")) return;
+    /*
+       Event delegation is intentional here.
+       It works even if the navigation elements were
+       not available when this script first ran.
+    */
+    const navLink = event.target.closest(
+        ".navbar-collapse .nav-link"
+    );
 
-    // If the visitor clicked inside the navbar, leave it alone
-    if (navbar.contains(event.target)) return;
-
-    // Clicked outside → close the menu
-    const collapseInstance =
-        bootstrap.Collapse.getInstance(navbarCollapse) ||
-        new bootstrap.Collapse(navbarCollapse, { toggle: false });
-
-    collapseInstance.hide();
-});
-
-//close after selecting a menu link
-document.querySelectorAll(".navbar-collapse .nav-link").forEach(function (link) {
-    link.addEventListener("click", function () {
-        const navbarCollapse = document.querySelector(".navbar-collapse");
-
-        if (!navbarCollapse) return;
+    if (navLink) {
 
         const collapseInstance =
-            bootstrap.Collapse.getInstance(navbarCollapse) ||
-            new bootstrap.Collapse(navbarCollapse, { toggle: false });
+            bootstrap.Collapse.getOrCreateInstance(
+                navbarCollapse,
+                { toggle: false }
+            );
 
         collapseInstance.hide();
-    });
+
+        return;
+    }
+
+    /* Close an open mobile menu when clicking outside. */
+    if (!navbarCollapse.classList.contains("show")) {
+        return;
+    }
+
+    if (navbar.contains(event.target)) {
+        return;
+    }
+
+    const collapseInstance =
+        bootstrap.Collapse.getOrCreateInstance(
+            navbarCollapse,
+            { toggle: false }
+        );
+
+    collapseInstance.hide();
+
 });

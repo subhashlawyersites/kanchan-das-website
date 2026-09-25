@@ -1513,3 +1513,12 @@ body.theme-teak .main-navbar {
         margin: 0 4px;
     }
 }
+/* ================= MOBILE SECTION SCROLL FIX ================= */
+
+@media (max-width: 991px) {
+
+    section {
+        scroll-margin-top: 380px;
+    }
+
+}
